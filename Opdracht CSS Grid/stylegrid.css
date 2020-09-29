@@ -1,0 +1,94 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  text-align: center;
+  color: white;
+}
+
+.grid-container > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-container {
+  height: 100vh;
+  display: grid;
+  grid-gap: 3px;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 50px auto 200px 50px;
+}
+
+.header-container {
+  background-color: #d54062;
+  grid-column: 1 / -1;
+}
+
+.site-main {
+  background-color: #ffa36c;
+  grid-column: 1 / -1;
+  grid-row: 2 / 3;
+}
+
+.widget-area {
+  background-color: #799351;
+  grid-column: 1 / -1;
+  grid-row: 3 / 4;
+}
+
+.footer-container {
+  background-color: #ebdc87;
+  grid-column: 1 / -1;
+}
+/*Media querie Breakpoints tablet*/
+@media only screen and (min-width: 600px) {
+  .header-container {
+    background-color: #d54062;
+    grid-column: 1 / 4;
+    grid-row: 1 / 5;
+  }
+
+  .site-main {
+    background-color: #ffa36c;
+    grid-column: 4 / -1;
+    grid-row: 1 / 3;
+  }
+
+  .widget-area {
+    background-color: #799351;
+    grid-column: 4 / -1;
+    grid-row: 3 / 4;
+  }
+
+  .footer-container {
+    background-color: #ebdc87;
+    grid-column: 4 / -1;
+  }
+}
+
+/*Media querie Breakpoints desktop*/
+
+@media only screen and (min-width: 768px) {
+  .header-container {
+    background-color: #d54062;
+    grid-column: 1 / 4;
+    grid-row: 1 / 5;
+  }
+
+  .site-main {
+    background-color: #ffa36c;
+    grid-column: 4 / 10;
+    grid-row: 1 / 4;
+  }
+
+  .widget-area {
+    background-color: #799351;
+    grid-column: 10 / -1;
+    grid-row: 1 / 5;
+  }
+
+  .footer-container {
+    background-color: #ebdc87;
+    grid-column: 4 / 10;
+  }
+}

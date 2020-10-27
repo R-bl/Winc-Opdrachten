@@ -1,0 +1,12 @@
+$hoverbordercolor: #000;
+$fontcolor: #090b08;
+$bodycolor: #ecffe9;
+$primarycolor: #97d279;
+$secondarycolor: #c0eea9;
+$primarypadding: 20px;
+
+@mixin text-style() {
+  max-width: 700px;
+  text-align: center;
+  padding: $primarypadding;
+}
